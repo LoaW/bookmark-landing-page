@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+body footer {
+  background-color: hsl(229deg, 31%, 21%);
+}
+body footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
