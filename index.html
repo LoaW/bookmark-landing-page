@@ -23,6 +23,10 @@
             <a href="#"
                 ><img src="./assets/images/logo-bookmark.svg" alt=""
             /></a>
+            <a href="#"
+                ><img src="./assets/images/icon-hamburger.svg" alt=""
+            /></a>
+
             <nav>
                 <a href="#">Features</a>
                 <a href="#">Pricing</a>
@@ -32,39 +36,48 @@
         </header>
         <main>
             <section class="introduction">
-                <h1>A Simple Bookmark Manager</h1>
-                <p>
-                    A clean and simple interface to organize your favourite
-                    websites. Open a new browser tab and see your sites load
-                    instantly. Try it for free.
-                </p>
-                <a href="">Get it on Chrome</a>
-                <a href="">Get it on Firefox</a>
+                <img src="./assets/images/illustration-hero.svg" alt="" />
+                <div class="introduction__text">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>
+                        A clean and simple interface to organize your favourite
+                        websites. Open a new browser tab and see your sites load
+                        instantly. Try it for free.
+                    </p>
+                    <div class="introduction__text__button">
+                        <a class="chrome" href="">Get it on Chrome</a>
+                        <a class="firefox" href="">Get it on Firefox</a>
+                    </div>
+                </div>
             </section>
 
             <section class="features">
                 <h2>Features</h2>
-                <p>
+                <p class="features__text">
                     Our aim is to make it quick and easy for you to access your
                     favourite websites. Your bookmarks sync between your devices
                     so you can access them on the go.
                 </p>
-                <button class="features-button prev">Simple Bookmarking</button>
-                <button class="features-button next">Speedy Searching</button>
-                <button class="features-button next">Easy Sharing</button>
+                <button class="features-button bookmarking">
+                    Simple Bookmarking
+                </button>
+                <button class="features-button searching">
+                    Speedy Searching
+                </button>
+                <button class="features-button sharing">Easy Sharing</button>
                 <ul>
-                    <li class="slide"></li>
-                    <img
-                        src="./assets/images/illustration-features-tab-1.svg"
-                        alt=""
-                    />
-                    <h2>Bookmark in one click</h2>
-                    <p>
-                        Organize your bookmarks however you like. Our simple
-                        drag-and-drop interface gives you complete control over
-                        how you manage your favourite sites.
-                    </p>
-                    <a href="#">More Info</a>
+                    <li class="slide">
+                        <img
+                            src="./assets/images/illustration-features-tab-1.svg"
+                            alt=""
+                        />
+                        <h2>Bookmark in one click</h2>
+                        <p> Organize your bookmarks however you like. Our simple
+                            drag-and-drop interface gives you complete control
+                            over how you manage your favourite sites.
+                        </p>
+                        <a href="#">More Info</a>
+                    </li>
                     <li class="slide">
                         <img
                             src="./assets/images/illustration-features-tab-2.svg"
@@ -102,20 +115,23 @@
                 <div class="download__container">
                     <div class="download__container__card chrome">
                         <img src="./assets/images/logo-chrome.svg" alt="" />
-                        <span>Add to Chrome</span>
-                        <span>Minimum version 62</span>
+                        <span class="card__add">Add to Chrome</span>
+                        <span class="card__version">Minimum version 62</span>
+                        <img src="./assets/images/bg-dots.svg" alt="">
                         <a href="#">Add & Install Extension</a>
                     </div>
                     <div class="download__container__card firefox">
                         <img src="./assets/images/logo-firefox.svg" alt="" />
-                        <span>Add to Firefox</span>
-                        <span>Minimum version 55</span>
+                        <span class="card__add">Add to Firefox</span>
+                        <span class="card__version">Minimum version 55</span>
+                        <img src="./assets/images/bg-dots.svg" alt="">
                         <a href="#">Add & Install Extension</a>
                     </div>
                     <div class="download__container__card opera">
                         <img src="./assets/images/logo-opera.svg" alt="" />
-                        <span>Add to Opera</span>
-                        <span>Minimum version 46</span>
+                        <span class="card__add">Add to Opera</span>
+                        <span class="card__version">Minimum version 46</span>
+                        <img src="./assets/images/bg-dots.svg" alt="">
                         <a href="#">Add & Install Extension</a>
                     </div>
                 </div>

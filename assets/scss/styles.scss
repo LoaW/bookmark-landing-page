@@ -1,15 +1,6 @@
-@import 'variables';
+@import 'variables', 'header', 'footer', 'introduction', 'features', 'download', 'faq';
 
 body{
-    header{
-
-    }
-    main{
-
-    }
-    footer{
-        background-color: $darkBlue;
-        .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
-    }
+    font-family: 'Rubik', sans-serif;
+    color: $softBlack;
 }

@@ -1,0 +1,47 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    img {
+    }
+    .introduction__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2vh;
+        h1{
+            font-weight: 500;
+            width: 80%;
+            font-size: 28px;
+        }
+        p{
+            color: $grayishBlue;
+            width: 80%;
+            margin-bottom: 5vh;
+        }
+        &__button {
+            font-weight: 500;
+            .chrome {
+                color: white;
+                background-color: $softBlue;
+                padding: 13px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-right: 2vw;
+            }
+            .firefox {
+                color: $softGrey;
+                background-color: rgb(255, 247, 247);
+                padding: 13px;
+                border-radius: 5px;
+                text-decoration: none;
+                box-shadow: 0 2.8px 2.2px rgba(157, 120, 120, 0.034),
+                    0 6.7px 5.3px rgba(144, 125, 125, 0.048),
+                    0 12.5px 10px rgba(147, 101, 101, 0.06),
+                    0 22.3px 17.9px rgba(170, 123, 123, 0.072);
+                margin-left: 2vw;
+            }
+        }
+    }
+}

@@ -1,11 +1,207 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
-body footer {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vh 4vw 4vh 4vw;
+}
+header nav {
+  display: none;
+}
+
+footer {
   background-color: hsl(229deg, 31%, 21%);
 }
-body footer .attribution {
+footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-body footer .attribution a {
+footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+.introduction .introduction__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.introduction .introduction__text h1 {
+  font-weight: 500;
+  width: 80%;
+  font-size: 28px;
+}
+.introduction .introduction__text p {
+  color: hsl(229deg, 8%, 60%);
+  width: 80%;
+  margin-bottom: 5vh;
+}
+.introduction .introduction__text__button {
+  font-weight: 500;
+}
+.introduction .introduction__text__button .chrome {
+  color: white;
+  background-color: hsl(231deg, 69%, 60%);
+  padding: 13px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+.introduction .introduction__text__button .firefox {
+  color: rgb(99, 95, 95);
+  background-color: rgb(255, 247, 247);
+  padding: 13px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2.8px 2.2px rgba(157, 120, 120, 0.034), 0 6.7px 5.3px rgba(144, 125, 125, 0.048), 0 12.5px 10px rgba(147, 101, 101, 0.06), 0 22.3px 17.9px rgba(170, 123, 123, 0.072);
+  margin-left: 2vw;
+}
+
+.features {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.features h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.features .features__text {
+  color: hsl(229deg, 8%, 60%);
+  width: 80%;
+  margin-bottom: 5vh;
+}
+.features .features-button {
+  color: rgb(99, 95, 95);
+  width: 80%;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+}
+.features .bookmarking {
+  border-top: 0.5px solid rgb(199, 199, 199);
+}
+.features .searching {
+  border-top: 0.5px solid rgb(199, 199, 199);
+  border-bottom: 0.5px solid rgb(199, 199, 199);
+}
+.features .sharing {
+  border-bottom: 0.5px solid rgb(199, 199, 199);
+}
+.features ul {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5vh;
+  list-style-type: none;
+  text-align: center;
+}
+.features ul .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6vh;
+}
+.features ul .slide img {
+  width: 80%;
+  margin-bottom: 2vh;
+}
+.features ul .slide p {
+  color: hsl(229deg, 8%, 60%);
+  width: 80%;
+  margin-bottom: 3vh;
+}
+.features ul .slide a {
+  color: white;
+  background-color: hsl(231deg, 69%, 60%);
+  padding: 13px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.download {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.download h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.download p {
+  color: hsl(229deg, 8%, 60%);
+  width: 80%;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.download__container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.download__container__card {
+  margin: 3vh 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+}
+.download__container__card img {
+  padding: 30px;
+}
+.download__container__card .card__add {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 2vh 0vh;
+}
+.download__container__card .card__version {
+  color: hsl(229deg, 8%, 60%);
+  width: 80%;
+  text-align: center;
+}
+.download__container__card a {
+  color: white;
+  background-color: hsl(231deg, 69%, 60%);
+  padding: 13px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 2vw;
+  margin-bottom: 3vh;
+}
+
+.faq {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.faq h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.faq p {
+  color: hsl(229deg, 8%, 60%);
+  width: 80%;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: rgb(43, 43, 65);
 }/*# sourceMappingURL=styles.css.map */
