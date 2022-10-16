@@ -1,17 +1,40 @@
-.faq{
+.faq {
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h2 {
+    font-size: 20px;
+    line-height: 30px;
+    &__title {
         font-weight: 500;
         font-size: 24px;
     }
-    p {
+    &__description {
         color: $grayishBlue;
         width: 80%;
         margin-bottom: 5vh;
         text-align: center;
+    }
+    &__question {
+        width: 90%;
+        .question {
+            border-bottom: 0.5px solid $lightGrey;
+            margin-top: 3vh;
+            p {
+                color: $grayishBlue;
+                margin-bottom: 5vh;
+                margin-left: 10px;
+            }
+        }
+    }
+    a{
+        color: white;
+        background-color: $softBlue;
+        padding: 13px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
 }

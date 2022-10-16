@@ -1,6 +1,9 @@
-@import 'variables', 'header', 'footer', 'introduction', 'features', 'download', 'faq';
+@import "variables", "header", "footer", "introduction", "features", "download",
+    "faq", 'contactUs';
 
-body{
-    font-family: 'Rubik', sans-serif;
+body {
+    font-family: "Rubik", sans-serif;
     color: $softBlack;
+    padding: 0;
+    margin: 0;
 }

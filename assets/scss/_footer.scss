@@ -1,5 +1,41 @@
-footer{
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: $darkBlue;
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    padding-top: 5vh;
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3vh;
+        a {
+            text-decoration: none;
+            color: $lightGrey;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin: 1vh;
+        }
+    }
+    &__social{
+        margin-top: 3vh;
+        &__facebook{
+            margin-right: 1em;
+        }
+        &__twitter{
+            margin-left: 1em;
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 3vh;
+        color: $lightGrey;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
 }

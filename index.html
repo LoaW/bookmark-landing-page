@@ -72,7 +72,8 @@
                             alt=""
                         />
                         <h2>Bookmark in one click</h2>
-                        <p> Organize your bookmarks however you like. Our simple
+                        <p>
+                            Organize your bookmarks however you like. Our simple
                             drag-and-drop interface gives you complete control
                             over how you manage your favourite sites.
                         </p>
@@ -117,104 +118,118 @@
                         <img src="./assets/images/logo-chrome.svg" alt="" />
                         <span class="card__add">Add to Chrome</span>
                         <span class="card__version">Minimum version 62</span>
-                        <img src="./assets/images/bg-dots.svg" alt="">
+                        <img src="./assets/images/bg-dots.svg" alt="" />
                         <a href="#">Add & Install Extension</a>
                     </div>
                     <div class="download__container__card firefox">
                         <img src="./assets/images/logo-firefox.svg" alt="" />
                         <span class="card__add">Add to Firefox</span>
                         <span class="card__version">Minimum version 55</span>
-                        <img src="./assets/images/bg-dots.svg" alt="">
+                        <img src="./assets/images/bg-dots.svg" alt="" />
                         <a href="#">Add & Install Extension</a>
                     </div>
                     <div class="download__container__card opera">
                         <img src="./assets/images/logo-opera.svg" alt="" />
                         <span class="card__add">Add to Opera</span>
                         <span class="card__version">Minimum version 46</span>
-                        <img src="./assets/images/bg-dots.svg" alt="">
+                        <img src="./assets/images/bg-dots.svg" alt="" />
                         <a href="#">Add & Install Extension</a>
                     </div>
                 </div>
             </section>
             <section class="faq">
-                <h2>Frequently Asked Questions</h2>
-                <p>
+                <h2 class="faq__title">Frequently Asked Questions</h2>
+                <p class="faq__description">
                     Here are some of our FAQs. If you have any other questions
                     you’d like answered please feel free to email us.
                 </p>
-                <div class="question_1">
-                    <span>What is Bookmark?</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce tincidunt justo eget ultricies fringilla.
-                        Phasellus blandit ipsum quis quam ornare mattis.
-                    </p>
-                </div>
-                <div class="question_2">
-                    <span>How can I request a new browser?</span>
-                    <p>
-                        Vivamus luctus eros aliquet convallis ultricies. Mauris
-                        augue massa, ultricies non ligula. Suspendisse
-                        imperdiet. Vivamus luctus eros aliquet convallis
-                        ultricies. Mauris augue massa, ultricies non ligula.
-                        Suspendisse imperdie tVivamus luctus eros aliquet
-                        convallis ultricies. Mauris augue massa, ultricies non
-                        ligula. Suspendisse imperdiet.
-                    </p>
-                </div>
-                <div class="question_3">
-                    <span>Is there a mobile app?</span>
-                    <p>
-                        Sed consectetur quam id neque fermentum accumsan.
-                        Praesent luctus vestibulum dolor, ut condimentum urna
-                        vulputate eget. Cras in ligula quis est pharetra mattis
-                        sit amet pharetra purus. Sed sollicitudin ex et
-                        ultricies bibendum.
-                    </p>
-                </div>
-                <div class="question_4">
-                    <span> What about other Chromium browsers?</span>
-                    <p>
-                        Integer condimentum ipsum id imperdiet finibus. Vivamus
-                        in placerat mi, at euismod dui. Aliquam vitae neque eget
-                        nisl gravida pellentesque non ut velit.
-                    </p>
+                <div class="faq__question">
+                    <div class="faq__question__q1 question">
+                        <span>What is Bookmark?</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Fusce tincidunt justo eget ultricies
+                            fringilla. Phasellus blandit ipsum quis quam ornare
+                            mattis.
+                        </p>
+                    </div>
+                    <div class="faq__question__q2 question">
+                        <span>How can I request a new browser?</span>
+                        <p>
+                            Vivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula.
+                            Suspendisse imperdiet. Vivamus luctus eros aliquet
+                            convallis ultricies. Mauris augue massa, ultricies
+                            non ligula. Suspendisse imperdie tVivamus luctus
+                            eros aliquet convallis ultricies. Mauris augue
+                            massa, ultricies non ligula. Suspendisse imperdiet.
+                        </p>
+                    </div>
+                    <div class="faq__question__q3 question">
+                        <span>Is there a mobile app?</span>
+                        <p>
+                            Sed consectetur quam id neque fermentum accumsan.
+                            Praesent luctus vestibulum dolor, ut condimentum
+                            urna vulputate eget. Cras in ligula quis est
+                            pharetra mattis sit amet pharetra purus. Sed
+                            sollicitudin ex et ultricies bibendum.
+                        </p>
+                    </div>
+                    <div class="faq__question__q4 question">
+                        <span> What about other Chromium browsers?</span>
+                        <p>
+                            Integer condimentum ipsum id imperdiet finibus.
+                            Vivamus in placerat mi, at euismod dui. Aliquam
+                            vitae neque eget nisl gravida pellentesque non ut
+                            velit.
+                        </p>
+                    </div>
                 </div>
                 <a href="#"> More Info</a>
             </section>
             <section class="contactUs">
-                <span>35,000+ already joined</span>
-                <span>Stay up-to-date with what we’re doing</span>
-                <form action="">
-                    <label for="email">Email</label>
+                <span class="contactUs__stat">35,000+ already joined</span>
+                <span class="contactUs__title"
+                    >Stay up-to-date with what we’re doing</span
+                >
+                <form class="contactUs__form" action="">
+                    <div class="contactUs__form__email">
+                        <label for="email"></label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="example@email/com"
+                            class="contactUs__form__email__textArea"
+                        />
+                        <span class="contactUs__form__email__textError"
+                            >Whoops, make sure it's an email</span
+                        >
+                    </div>
+
                     <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        placeholder="Your email.."
+                        type="submit"
+                        value="Contact Us"
+                        class="contactUs__form__send"
                     />
-                    <span>Whoops, make sure it's an email</span>
-                    <input type="submit" value="Contact Us" />
                 </form>
             </section>
         </main>
 
-        Contact Us Features Pricing Contact
-
-        <footer>
-            <a href="#"
-                ><img src="./assets/images/logo-bookmark.svg" alt=""
+        <footer class="footer">
+            <a class="footer__logo" href="#"
+                ><img src="./assets/images/logo-bookmark-white.svg" alt=""
             /></a>
-            <nav>
+            <nav class="footer__nav">
                 <a href="#">Features</a>
                 <a href="#">Pricing</a>
                 <a href="#">Contact</a>
             </nav>
-            <div class="social-icons">
-                <a href="#"
+            <div class="footer__social">
+                <a class="footer__social__facebook" href="#"
                     ><img src="./assets/images/icon-facebook.svg" alt=""
                 /></a>
-                <a href="#"
+                <a class="footer__social__twitter"  href="#"
                     ><img src="./assets/images/icon-twitter.svg" alt=""
                 /></a>
             </div>
@@ -224,7 +239,7 @@
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
                     >Frontend Mentor</a
-                >. Coded by <a href="#">Your Name Here</a>.
+                >. Coded by <a href="#">Brigode Xavier</a>.
             </p>
         </footer>
     </body>
