@@ -1,12 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4vh 4vw 4vh 4vw;
+  margin-bottom: 8vh;
 }
-header nav {
+.navbar__modal {
+  display: block;
+  background-color: white;
+  border: none;
+}
+@media only screen and (min-width: 413px) {
+  .navbar__modal {
+    display: none;
+  }
+}
+.navbar__links {
   display: none;
+}
+@media only screen and (min-width: 413px) {
+  .navbar__links {
+    display: block;
+  }
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(18, 20, 35, 0.98);
+  z-index: 1;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 10vh;
+}
+.modal__header__dropClose {
+  background-color: rgba(18, 20, 35, 0);
+  border: none;
+}
+.modal__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+.modal__links .link {
+  font-size: 24px;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: lighter;
+  letter-spacing: 0.15em;
+  border-top: 0.2px solid rgb(199, 199, 199);
+  border-bottom: 0.2px solid rgb(199, 199, 199);
+}
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin-bottom: 10vh;
 }
 
 .footer {
@@ -54,6 +118,25 @@ header nav {
   display: flex;
   flex-direction: column;
   margin-bottom: 10vh;
+}
+.introduction__illustration {
+  width: auto;
+}
+.introduction__illustration__blueShape {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-bottom-left-radius: 35%;
+  border-top-left-radius: 35%;
+  background-color: hsl(231deg, 69%, 60%);
+  margin-left: auto;
+}
+.introduction__illustration__blueShape img {
+  position: absolute;
+  width: 130%;
+  bottom: 0px;
+  right: 3px;
 }
 .introduction .introduction__text {
   display: flex;

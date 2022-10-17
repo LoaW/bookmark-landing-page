@@ -2,7 +2,24 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10vh;
-    img {
+    &__illustration {
+        width: auto;
+        &__blueShape {
+            display: block;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-bottom-left-radius: 35%;
+            border-top-left-radius: 35%;
+            background-color: $softBlue;
+            margin-left: auto;
+            img {
+                position: absolute;
+                width: 130%;
+                bottom: 0px;
+                right: 3px;
+            }
+        }
     }
     .introduction__text {
         display: flex;
@@ -10,12 +27,12 @@
         align-items: center;
         text-align: center;
         margin-bottom: 2vh;
-        h1{
+        h1 {
             font-weight: 500;
             width: 80%;
             font-size: 28px;
         }
-        p{
+        p {
             color: $grayishBlue;
             width: 80%;
             margin-bottom: 5vh;

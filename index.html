@@ -20,23 +20,59 @@
     </head>
     <body>
         <header>
-            <a href="#"
-                ><img src="./assets/images/logo-bookmark.svg" alt=""
-            /></a>
-            <a href="#"
-                ><img src="./assets/images/icon-hamburger.svg" alt=""
-            /></a>
-
-            <nav>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
+            <nav class="navbar">
+                <a href="#" class="navbar__home"
+                    ><img src="./assets/images/logo-bookmark.svg" alt=""
+                /></a>
+                <button class="navbar__modal">
+                    <img src="./assets/images/icon-hamburger.svg" alt="" />
+                </button>
+                <div class="navbar__links">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Login</a>
+                </div>
             </nav>
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal__header">
+                    <a href="#" class="modal__header__home"
+                        ><img
+                            src="./assets/images/logo-bookmark-white.svg"
+                            alt=""
+                    /></a>
+                    <button class="modal__header__dropClose">
+                        <img src="./assets/images/icon-close.svg" alt="" />
+                    </button>
+                </div>
+                <div class="modal__links">
+                    <a class="link" class="link1" href="#">Features</a>
+                    <a class="link" class="link2" href="#">Pricing</a>
+                    <a class="link" class="link3" href="#">Contact</a>
+                    <a class="link" class="link4" href="#">Login</a>
+                </div>
+                <div class="modal__footer">
+                    <a class="modal__footer__facebook" href="#"
+                        ><img src="./assets/images/icon-facebook.svg" alt=""
+                    /></a>
+                    <a class="modal__footer__twitter" href="#"
+                        ><img src="./assets/images/icon-twitter.svg" alt=""
+                    /></a>
+                </div>
+            </div>
         </header>
+
         <main>
             <section class="introduction">
-                <img src="./assets/images/illustration-hero.svg" alt="" />
+                <div class="introduction__illustration">
+                    <div class="introduction__illustration__blueShape">
+                        <img
+                            src="./assets/images/illustration-hero.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
                 <div class="introduction__text">
                     <h1>A Simple Bookmark Manager</h1>
                     <p>
@@ -229,7 +265,7 @@
                 <a class="footer__social__facebook" href="#"
                     ><img src="./assets/images/icon-facebook.svg" alt=""
                 /></a>
-                <a class="footer__social__twitter"  href="#"
+                <a class="footer__social__twitter" href="#"
                     ><img src="./assets/images/icon-twitter.svg" alt=""
                 /></a>
             </div>
@@ -242,5 +278,6 @@
                 >. Coded by <a href="#">Brigode Xavier</a>.
             </p>
         </footer>
+        <script src="./assets/scripts/modal.js"></script>
     </body>
 </html>
