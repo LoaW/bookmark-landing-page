@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10vh;
+    @media only screen and (min-width: 413px) {
+        flex-direction: row-reverse;
+    }
     &__illustration {
         width: auto;
         &__blueShape {
@@ -18,6 +21,8 @@
                 width: 130%;
                 bottom: 0px;
                 right: 3px;
+                @media only screen and (min-width: 413px) {
+                }
             }
         }
     }
@@ -25,8 +30,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         margin-bottom: 2vh;
+        @media only screen and (min-width: 413px) {
+            align-items: flex-start;
+            margin-left: 5vw;
+        }
         h1 {
             font-weight: 500;
             width: 80%;
@@ -47,6 +55,11 @@
                 text-decoration: none;
                 margin-right: 2vw;
             }
+            .chrome:hover{
+                color: $softBlue;
+                background-color: white;
+                border: 2px solid $softBlue;
+            }
             .firefox {
                 color: $softGrey;
                 background-color: rgb(255, 247, 247);
@@ -58,6 +71,11 @@
                     0 12.5px 10px rgba(147, 101, 101, 0.06),
                     0 22.3px 17.9px rgba(170, 123, 123, 0.072);
                 margin-left: 2vw;
+            }
+            .firefox:hover{
+                color: $softGrey;
+                background-color: white;
+                border: 2px solid $softGrey;
             }
         }
     }

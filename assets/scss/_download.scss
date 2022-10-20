@@ -11,13 +11,18 @@
     p {
         color: $grayishBlue;
         width: 80%;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
         text-align: center;
     }
     &__container {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        @media only screen and (min-width: 413px) {
+            flex-direction: row;
+            align-self: center;
+            gap: 2vw;
+        }
+        
         &__card {
             margin: 3vh 0vh;
             display: flex;
@@ -26,6 +31,10 @@
             justify-content: center;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             border-radius: 15px;
+            max-height: 360px;
+            @media only screen and (min-width: 413px) {
+                width: 280px;
+            }
             img{
                 padding: 30px;
             }
@@ -45,10 +54,19 @@
                 padding: 13px;
                 border-radius: 5px;
                 text-decoration: none;
-                margin-right: 2vw;
                 margin-bottom: 3vh;
             }
-            
+            a:hover{
+                color: $softBlue;
+                background-color: white;
+                border: 2px solid $softBlue;
+            }
+        }
+        .chrome{
+            translate: 0px -50px;
+        }
+        .opera{
+            translate: 0px 50px;
         }
     }
 }

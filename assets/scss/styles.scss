@@ -1,9 +1,16 @@
 @import "variables", "header", "footer", "introduction", "features", "download",
-    "faq", 'contactUs';
+    "faq", "contactUs";
 
 body {
     font-family: "Rubik", sans-serif;
     color: $softBlack;
     padding: 0;
     margin: 0;
+
+    @media screen and (min-width: 413px) {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
 }

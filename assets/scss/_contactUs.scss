@@ -41,7 +41,8 @@
                 color: $softGrey;
                 margin: 3px;
             }
-            &__textError{
+            &__textError {
+                display: none;
                 width: 370px;
                 padding: 5px;
                 margin-left: 25px;
@@ -59,6 +60,11 @@
             background-color: $softRed;
             font-weight: 500;
             margin-bottom: 5vh;
+        }
+        &__send:hover {
+            color: $softRed;
+            background-color: white;
+            border: 2px solid $softRed;
         }
     }
 }

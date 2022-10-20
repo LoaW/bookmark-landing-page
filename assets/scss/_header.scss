@@ -4,6 +4,9 @@
     align-items: center;
     padding: 4vh 4vw 4vh 4vw;
     margin-bottom: 8vh;
+    @media only screen and (min-width: 413px) {
+        margin-bottom: 14vh;
+    }
     &__modal {
         display: block;
         background-color: white;
@@ -15,7 +18,30 @@
     &__links {
         display: none;
         @media only screen and (min-width: 413px) {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 5vw;
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $softBlack;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            a:hover{
+                color: $softRed;
+            }
+            .navbar__links__login{
+                padding: 10px 30px;
+                border-radius: 7px;
+                color: white;
+                background-color: $softRed;
+            }
+            .navbar__links__login:hover{
+                color: $softRed;
+                background-color: white;
+                border: 2px solid $softRed;
+            }
         }
     }
 }
