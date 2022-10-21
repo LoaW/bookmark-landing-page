@@ -21,6 +21,9 @@
         .question {
             border-bottom: 0.5px solid $lightGrey;
             margin-top: 3vh;
+            .faq-sentence{
+                margin-bottom: 2vh;
+            }
             p {
                 color: $grayishBlue;
                 margin-bottom: 5vh;
@@ -77,6 +80,8 @@
         text-decoration: none;
         margin-top: 5vh;
         margin-bottom: 10vh;
+        border: 2px solid white;
+
     }
     a:hover{
         color: $softBlue;

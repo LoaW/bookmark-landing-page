@@ -204,7 +204,7 @@
                 <div class="faq__question">
                     <div class="faq__question__q1 question">
                         <div class="q1-question">
-                            <span>What is Bookmark?</span>
+                            <span class="faq-sentence">What is Bookmark?</span>
                             <button class="faq-button1 faq-button">
                                 <img
                                     class="faq-arrow"
@@ -222,7 +222,7 @@
                     </div>
                     <div class="faq__question__q2 question">
                         <div class="q2-question">
-                            <span>How can I request a new browser?</span>
+                            <span class="faq-sentence">How can I request a new browser?</span>
                             <button class="faq-button2 faq-button">
                                 <img
                                     class="faq-arrow"
@@ -243,7 +243,7 @@
                     </div>
                     <div class="faq__question__q3 question">
                         <div class="q3-question">
-                            <span>Is there a mobile app?</span>
+                            <span class="faq-sentence">Is there a mobile app?</span>
                             <button class="faq-button3 faq-button">
                                 <img
                                     class="faq-arrow"
@@ -262,7 +262,7 @@
                     </div>
                     <div class="faq__question__q4 question">
                         <div class="q4-question">
-                            <span> What about other Chromium browsers?</span>
+                            <span class="faq-sentence"> What about other Chromium browsers?</span>
                             <button class="faq-button4 faq-button">
                                 <img
                                     class="faq-arrow"
@@ -293,8 +293,10 @@
                             type="text"
                             id="email"
                             name="email"
-                            placeholder="example@email/com"
+                            placeholder="youremail@example.com"
                             class="contactUs__form__email__textArea"
+                            onKeyUp="validation()"
+                            required
                         />
                         <span class="contactUs__form__email__textError"
                             >Whoops, make sure it's an email</span
@@ -339,5 +341,6 @@
         <script src="./assets/scripts/modal.js"></script>
         <script src="./assets/scripts/slide.js"></script>
         <script src="./assets/scripts/faq.js"></script>
+        <script src="./assets/scripts/validation.js"></script>
     </body>
 </html>

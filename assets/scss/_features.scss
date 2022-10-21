@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .features-button-container {
         @media only screen and (min-width: 413px) {
             display: flex;
@@ -14,32 +15,40 @@
         font-weight: 500;
         font-size: 24px;
     }
+
     .features__text {
         color: $grayishBlue;
         width: 80%;
         margin-bottom: 5vh;
+
         @media only screen and (min-width: 413px) {
             width: 50%;
         }
     }
+
     .features-button {
         color: $softGrey;
         width: 80%;
         background-color: white;
         border: none;
-        font-size: 20px;
+        font-size: 14px;
         padding: 15px;
+        font-weight: 600;
     }
+
     .bookmarking {
         border-top: 0.5px solid $lightGrey;
+
         @media only screen and (min-width: 413px) {
             border-top: none;
             border-bottom: 0.5px solid $lightGrey;
         }
     }
+
     .bookmarking:hover {
         color: $softRed;
     }
+
     .bookmarking:active {
         border-bottom: 3px solid $softRed;
     }
@@ -47,13 +56,16 @@
     .searching {
         border-top: 0.5px solid $lightGrey;
         border-bottom: 0.5px solid $lightGrey;
+
         @media only screen and (min-width: 413px) {
             border-top: none;
         }
     }
+
     .searching:hover {
         color: $softRed;
     }
+
     .searching:active {
         border-bottom: 3px solid $softRed;
     }
@@ -61,9 +73,11 @@
     .sharing {
         border-bottom: 0.5px solid $lightGrey;
     }
+
     .sharing:hover {
         color: $softRed;
     }
+
     .sharing:active {
         border-bottom: 3px solid $softRed;
     }
@@ -73,19 +87,23 @@
         padding: 0px;
         margin-top: 5vh;
         list-style-type: none;
+
         .slide {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             margin-top: 6vh;
+
             @media screen and (min-width: 413px) {
                 flex-direction: row;
                 margin-top: 10vh;
                 justify-content: space-between;
             }
+
             .slide__left {
                 width: 100%;
+
                 .features__illustration__blueShape {
                     display: block;
                     position: relative;
@@ -96,23 +114,27 @@
                     background-color: $softBlue;
                     margin-right: auto;
                     margin-bottom: 2vh;
+
                     @media only screen and (min-width: 413px) {
                         width: 80%;
                         height: 25vh;
                     }
+
                     img {
                         position: absolute;
                         width: 300px;
                         height: 200px;
                         bottom: 20%;
                         left: 15%;
+
                         @media only screen and (min-width: 413px) {
                             width: 95%;
                             height: auto;
                         }
                     }
-                    
+
                 }
+
                 // .features__illustration__blueShape2 {
                 //     display: block;
                 //     position: relative;
@@ -133,26 +155,32 @@
                 //         bottom: 20%;
                 //         left: 15%;
                 //     }
-                    
+
                 // }
 
             }
+
             .slide__right {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
                 @media only screen and (min-width: 413px) {
                     align-items: flex-end;
+                    margin-right: 5vw;
                 }
+
                 p {
                     color: $grayishBlue;
                     width: 80%;
                     margin-bottom: 3vh;
+
                     @media only screen and (min-width: 413px) {
                         text-align: right;
                     }
                 }
+
                 a {
                     color: white;
                     background-color: $softBlue;
@@ -160,18 +188,25 @@
                     border-radius: 5px;
                     text-decoration: none;
                     margin-right: 2vw;
+                    border: 2px solid white;
                 }
+
                 a:hover {
-                    padding: 15px;
+                    color: $softBlue;
+                    background-color: white;
+                    border: 2px solid $softBlue;
                 }
             }
         }
+
         .s1 {
             display: flex;
         }
+
         .s2 {
             display: none;
         }
+
         .s3 {
             display: none;
         }

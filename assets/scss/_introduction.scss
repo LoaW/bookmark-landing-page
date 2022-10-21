@@ -7,6 +7,10 @@
     }
     &__illustration {
         width: auto;
+        @media only screen and (min-width: 413px) {
+            display: flex;
+            align-items: flex-end;
+        }
         &__blueShape {
             display: block;
             position: relative;
@@ -34,6 +38,7 @@
         @media only screen and (min-width: 413px) {
             align-items: flex-start;
             margin-left: 5vw;
+            margin-bottom: 5vh;
         }
         h1 {
             font-weight: 500;
@@ -54,6 +59,7 @@
                 border-radius: 5px;
                 text-decoration: none;
                 margin-right: 2vw;
+                border: 2px solid white;
             }
             .chrome:hover{
                 color: $softBlue;
@@ -62,7 +68,7 @@
             }
             .firefox {
                 color: $softGrey;
-                background-color: rgb(255, 247, 247);
+                background-color: rgb(255, 255, 255);
                 padding: 13px;
                 border-radius: 5px;
                 text-decoration: none;
@@ -75,7 +81,7 @@
             .firefox:hover{
                 color: $softGrey;
                 background-color: white;
-                border: 2px solid $softGrey;
+                border: 2px solid white;
             }
         }
     }
