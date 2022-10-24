@@ -3,13 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4vh 4vw 4vh 4vw;
-  margin-bottom: 8vh;
-}
-@media only screen and (min-width: 413px) {
-  .navbar {
-    margin-bottom: 14vh;
-  }
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 .navbar__modal {
   display: block;
@@ -176,65 +174,50 @@
 .introduction {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
-@media only screen and (min-width: 413px) {
+@media only screen and (min-width: 821px) {
   .introduction {
     flex-direction: row-reverse;
   }
 }
-.introduction__illustration {
-  width: auto;
-}
-@media only screen and (min-width: 413px) {
+@media only screen and (min-width: 821px) {
   .introduction__illustration {
     display: flex;
     align-items: flex-end;
   }
 }
-.introduction__illustration__blueShape {
-  display: block;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  border-bottom-left-radius: 35%;
-  border-top-left-radius: 35%;
-  background-color: hsl(231deg, 69%, 60%);
-  margin-left: auto;
+.introduction__illustration__file {
+  width: 100%;
 }
-.introduction__illustration__blueShape img {
-  position: absolute;
-  width: 130%;
-  bottom: 0px;
-  right: 3px;
-}
-.introduction .introduction__text {
+.introduction__text {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2vh;
+  text-align: center;
 }
 @media only screen and (min-width: 413px) {
-  .introduction .introduction__text {
+  .introduction__text {
     align-items: flex-start;
     margin-left: 5vw;
     margin-bottom: 5vh;
   }
 }
-.introduction .introduction__text h1 {
-  font-weight: 500;
+.introduction__text h1 {
   width: 80%;
-  font-size: 28px;
+  font-size: 8vw;
+  font-weight: 500;
 }
-.introduction .introduction__text p {
-  color: hsl(229deg, 8%, 60%);
+.introduction__text p {
   width: 80%;
   margin-bottom: 5vh;
+  color: hsl(229deg, 8%, 60%);
 }
-.introduction .introduction__text__button {
+.introduction__text__button {
   font-weight: 500;
 }
-.introduction .introduction__text__button .chrome {
+.introduction__text__button .chrome {
   color: white;
   background-color: hsl(231deg, 69%, 60%);
   padding: 13px;
@@ -243,12 +226,12 @@
   margin-right: 2vw;
   border: 2px solid white;
 }
-.introduction .introduction__text__button .chrome:hover {
+.introduction__text__button .chrome:hover {
   color: hsl(231deg, 69%, 60%);
   background-color: white;
   border: 2px solid hsl(231deg, 69%, 60%);
 }
-.introduction .introduction__text__button .firefox {
+.introduction__text__button .firefox {
   color: rgb(99, 95, 95);
   background-color: rgb(255, 255, 255);
   padding: 13px;
@@ -257,7 +240,7 @@
   box-shadow: 0 2.8px 2.2px rgba(157, 120, 120, 0.034), 0 6.7px 5.3px rgba(144, 125, 125, 0.048), 0 12.5px 10px rgba(147, 101, 101, 0.06), 0 22.3px 17.9px rgba(170, 123, 123, 0.072);
   margin-left: 2vw;
 }
-.introduction .introduction__text__button .firefox:hover {
+.introduction__text__button .firefox:hover {
   color: rgb(99, 95, 95);
   background-color: white;
   border: 2px solid white;
@@ -269,6 +252,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10vh;
 }
 @media only screen and (min-width: 413px) {
   .features .features-button-container {
@@ -276,13 +260,14 @@
   }
 }
 .features h2 {
+  font-size: 7vw;
   font-weight: 500;
-  font-size: 24px;
 }
 .features .features__text {
-  color: hsl(229deg, 8%, 60%);
   width: 80%;
   margin-bottom: 5vh;
+  font-size: 4vw;
+  color: hsl(229deg, 8%, 60%);
 }
 @media only screen and (min-width: 413px) {
   .features .features__text {
@@ -290,13 +275,13 @@
   }
 }
 .features .features-button {
-  color: rgb(99, 95, 95);
   width: 80%;
-  background-color: white;
-  border: none;
-  font-size: 14px;
   padding: 15px;
+  border: none;
+  font-size: 4vw;
   font-weight: 600;
+  color: rgb(99, 95, 95);
+  background-color: white;
 }
 .features .bookmarking {
   border-top: 0.5px solid rgb(199, 199, 199);
@@ -307,11 +292,14 @@
     border-bottom: 0.5px solid rgb(199, 199, 199);
   }
 }
-.features .bookmarking:hover {
-  color: hsl(0deg, 94%, 66%);
+.features .bookmarking__highlight {
+  padding-bottom: 12px;
 }
-.features .bookmarking:active {
-  border-bottom: 3px solid hsl(0deg, 94%, 66%);
+.features .bookmarking__highlight:hover {
+  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+}
+.features .bookmarking:hover {
+  color: rgb(43, 43, 65);
 }
 .features .searching {
   border-top: 0.5px solid rgb(199, 199, 199);
@@ -322,25 +310,31 @@
     border-top: none;
   }
 }
-.features .searching:hover {
-  color: hsl(0deg, 94%, 66%);
+.features .searching__highlight {
+  padding-bottom: 12px;
 }
-.features .searching:active {
-  border-bottom: 3px solid hsl(0deg, 94%, 66%);
+.features .searching__highlight:hover {
+  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+}
+.features .searching:hover {
+  color: rgb(43, 43, 65);
 }
 .features .sharing {
   border-bottom: 0.5px solid rgb(199, 199, 199);
 }
-.features .sharing:hover {
-  color: hsl(0deg, 94%, 66%);
+.features .sharing__highlight {
+  padding-bottom: 12px;
 }
-.features .sharing:active {
-  border-bottom: 3px solid hsl(0deg, 94%, 66%);
+.features .sharing__highlight:hover {
+  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+}
+.features .sharing:hover {
+  color: rgb(43, 43, 65);
 }
 .features ul {
   margin: 0px;
   padding: 0px;
-  margin-top: 5vh;
+  margin-top: 8vh;
   list-style-type: none;
 }
 .features ul .slide {
@@ -348,7 +342,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 6vh;
 }
 @media screen and (min-width: 413px) {
   .features ul .slide {
@@ -358,37 +351,10 @@
   }
 }
 .features ul .slide .slide__left {
-  width: 100%;
+  margin-bottom: 5vh;
 }
-.features ul .slide .slide__left .features__illustration__blueShape {
-  display: block;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  border-bottom-right-radius: 35%;
-  border-top-right-radius: 35%;
-  background-color: hsl(231deg, 69%, 60%);
-  margin-right: auto;
-  margin-bottom: 2vh;
-}
-@media only screen and (min-width: 413px) {
-  .features ul .slide .slide__left .features__illustration__blueShape {
-    width: 80%;
-    height: 25vh;
-  }
-}
-.features ul .slide .slide__left .features__illustration__blueShape img {
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  bottom: 20%;
-  left: 15%;
-}
-@media only screen and (min-width: 413px) {
-  .features ul .slide .slide__left .features__illustration__blueShape img {
-    width: 95%;
-    height: auto;
-  }
+.features ul .slide .slide__left img {
+  width: 80%;
 }
 .features ul .slide .slide__right {
   display: flex;
@@ -402,10 +368,16 @@
     margin-right: 5vw;
   }
 }
+.features ul .slide .slide__right h2 {
+  font-size: 7vw;
+  margin-bottom: 0px;
+}
 .features ul .slide .slide__right p {
   color: hsl(229deg, 8%, 60%);
   width: 80%;
   margin-bottom: 3vh;
+  font-size: 4vw;
+  line-height: 3vh;
 }
 @media only screen and (min-width: 413px) {
   .features ul .slide .slide__right p {
@@ -437,25 +409,28 @@
 }
 
 .download {
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20vh;
 }
 .download h2 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 7vw;
 }
 .download p {
   color: hsl(229deg, 8%, 60%);
   width: 80%;
   margin-bottom: 10vh;
   text-align: center;
+  font-size: 4vw;
+  line-height: 3vh;
 }
 .download__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media only screen and (min-width: 811px) {
   .download__container {
@@ -465,14 +440,14 @@
   }
 }
 .download__container__card {
-  margin: 3vh 0vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 82%;
+  margin: 3vh 0vh;
   border-radius: 15px;
-  max-height: 360px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media only screen and (min-width: 811px) {
   .download__container__card {
@@ -514,38 +489,43 @@
 }
 
 .faq {
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10vh;
   font-size: 20px;
   line-height: 30px;
 }
 .faq__title {
   font-weight: 500;
-  font-size: 24px;
-}
-.faq__description {
-  color: hsl(229deg, 8%, 60%);
+  font-size: 7vw;
   width: 80%;
-  margin-bottom: 5vh;
   text-align: center;
 }
+.faq__description {
+  width: 80%;
+  margin-bottom: 5vh;
+  font-size: 4vw;
+  text-align: center;
+  color: hsl(229deg, 8%, 60%);
+}
 .faq__question {
-  width: 90%;
+  width: 85%;
 }
 .faq__question .question {
   border-bottom: 0.5px solid rgb(199, 199, 199);
   margin-top: 3vh;
+  padding-bottom: 2vh;
 }
 .faq__question .question .faq-sentence {
-  margin-bottom: 2vh;
+  font-size: 4vw;
 }
 .faq__question .question p {
-  color: hsl(229deg, 8%, 60%);
   margin-bottom: 5vh;
   margin-left: 10px;
+  font-size: 4vw;
+  color: hsl(229deg, 8%, 60%);
 }
 .faq__question .question .q1-question {
   display: flex;
@@ -582,9 +562,6 @@
 .faq__question .question .faq-button {
   background-color: white;
   border: none;
-}
-.faq__question .question .faq-button .faq-arrow:hover {
-  width: 120%;
 }
 .faq a {
   color: white;
@@ -656,6 +633,9 @@
   font-size: 12px;
   font-style: italic;
 }
+.contactUs__form__email__textError:invalid {
+  display: inline-block !important;
+}
 .contactUs__form__send {
   width: 370px;
   border: none;
@@ -679,12 +659,4 @@ body {
   color: rgb(43, 43, 65);
   padding: 0;
   margin: 0;
-}
-@media screen and (min-width: 811px) {
-  body {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
 }/*# sourceMappingURL=styles.css.map */

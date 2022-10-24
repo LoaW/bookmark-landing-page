@@ -49,6 +49,9 @@
                 font-size: 12px;
                 font-style: italic;
             }
+            &__textError:invalid {
+                display: inline-block !important;
+            }
         }
         &__send {
             width: 370px;

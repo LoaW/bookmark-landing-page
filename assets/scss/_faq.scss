@@ -1,78 +1,79 @@
 .faq {
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10vh;
     font-size: 20px;
     line-height: 30px;
     &__title {
         font-weight: 500;
-        font-size: 24px;
-    }
-    &__description {
-        color: $grayishBlue;
+        font-size: 7vw;
         width: 80%;
-        margin-bottom: 5vh;
         text-align: center;
     }
+    &__description {
+        width: 80%;
+        margin-bottom: 5vh;
+        font-size: 4vw;
+        text-align: center;
+        color: $grayishBlue;
+    }
     &__question {
-        width: 90%;
+        width: 85%;
         .question {
             border-bottom: 0.5px solid $lightGrey;
             margin-top: 3vh;
-            .faq-sentence{
-                margin-bottom: 2vh;
+            padding-bottom: 2vh;
+
+            .faq-sentence {
+                font-size: 4vw;
             }
             p {
-                color: $grayishBlue;
                 margin-bottom: 5vh;
                 margin-left: 10px;
+                font-size: 4vw;
+                color: $grayishBlue;
             }
-            .q1-question{
+            .q1-question {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
-            .q1-response{
+            .q1-response {
                 display: none;
             }
-            .q2-question{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-            }
-            .q2-response{
-                display: none;
-            }
-            .q3-question{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-            }
-            .q3-response{
-                display: none;
-            }
-            .q4-question{
+            .q2-question {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
-            .q4-response{
+            .q2-response {
                 display: none;
             }
-            .faq-button{
+            .q3-question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .q3-response {
+                display: none;
+            }
+            .q4-question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .q4-response {
+                display: none;
+            }
+            .faq-button {
                 background-color: white;
                 border: none;
-                .faq-arrow:hover{
-                    width: 120%;
-                }
             }
         }
     }
-    a{
+    a {
         color: white;
         background-color: $softBlue;
         padding: 13px;
@@ -81,9 +82,8 @@
         margin-top: 5vh;
         margin-bottom: 10vh;
         border: 2px solid white;
-
     }
-    a:hover{
+    a:hover {
         color: $softBlue;
         background-color: white;
         border: 2px solid $softBlue;

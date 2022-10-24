@@ -1,37 +1,40 @@
 .download {
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20vh;
     h2 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 7vw;
     }
     p {
         color: $grayishBlue;
         width: 80%;
         margin-bottom: 10vh;
         text-align: center;
+        font-size: 4vw;
+        line-height: 3vh;
+
     }
     &__container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         @media only screen and (min-width: 811px) {
             flex-direction: row;
             align-self: center;
             gap: 2vw;
         }
-        
         &__card {
-            margin: 3vh 0vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 82%;
+            margin: 3vh 0vh;
             border-radius: 15px;
-            max-height: 360px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             @media only screen and (min-width: 811px) {
                 width: 280px;
             }

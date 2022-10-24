@@ -66,12 +66,7 @@
         <main>
             <section class="introduction">
                 <div class="introduction__illustration">
-                    <div class="introduction__illustration__blueShape">
-                        <img
-                            src="./assets/images/illustration-hero.svg"
-                            alt=""
-                        />
-                    </div>
+                    <img src="./assets/images/illustration-hero.svg" alt="" class="introduction__illustration__file" />
                 </div>
                 <div class="introduction__text">
                     <h1>A Simple Bookmark Manager</h1>
@@ -95,24 +90,22 @@
                 </p>
                 <div class="features-button-container">
                     <button class="features-button bookmarking">
-                        Simple Bookmarking
+                        <span class="bookmarking__highlight">Simple Bookmarking</span> 
                     </button>
                     <button class="features-button searching">
-                        Speedy Searching
+                        <span class="searching__highlight">Speedy Searching</span> 
                     </button>
                     <button class="features-button sharing">
-                        Easy Sharing
+                        <span class="sharing__highlight">Easy Sharing</span> 
                     </button>
                 </div>
                 <ul>
                     <li id="slide1" class="slide s1">
                         <div class="slide__left">
-                            <div class="features__illustration__blueShape">
-                                <img
-                                    src="./assets/images/illustration-features-tab-1.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                src="./assets/images/illustration-features-tab-1.svg"
+                                alt=""
+                            />
                         </div>
                         <div class="slide__right">
                             <h2>Bookmark in one click</h2>
@@ -127,12 +120,10 @@
                     </li>
                     <li id="slide2" class="slide s2">
                         <div class="slide__left">
-                            <div class="features__illustration__blueShape">
-                                <img
-                                    src="./assets/images/illustration-features-tab-2.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                src="./assets/images/illustration-features-tab-2.svg"
+                                alt=""
+                            />
                         </div>
                         <div class="slide__right">
                             <h2>Intelligent search</h2>
@@ -146,12 +137,10 @@
                     </li>
                     <li id="slide3" class="slide s3">
                         <div class="slide__left">
-                            <div class="features__illustration__blueShape">
-                                <img
-                                    src="./assets/images/illustration-features-tab-3.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                src="./assets/images/illustration-features-tab-3.svg"
+                                alt=""
+                            />
                         </div>
                         <div class="slide__right">
                             <h2>Share your bookmarks</h2>
@@ -206,11 +195,7 @@
                         <div class="q1-question">
                             <span class="faq-sentence">What is Bookmark?</span>
                             <button class="faq-button1 faq-button">
-                                <img
-                                    class="faq-arrow"
-                                    src="./assets/images/icon-arrow.svg"
-                                    alt=""
-                                />
+                                <object class="faq-arrow1" data="./assets/images/icon-arrow.svg" type="image/svg+xml"></object>
                             </button>
                         </div>
                         <p class="q1-response">
@@ -222,10 +207,12 @@
                     </div>
                     <div class="faq__question__q2 question">
                         <div class="q2-question">
-                            <span class="faq-sentence">How can I request a new browser?</span>
+                            <span class="faq-sentence"
+                                >How can I request a new browser?</span
+                            >
                             <button class="faq-button2 faq-button">
                                 <img
-                                    class="faq-arrow"
+                                    class="faq-arrow2"
                                     src="./assets/images/icon-arrow.svg"
                                     alt=""
                                 />
@@ -243,10 +230,12 @@
                     </div>
                     <div class="faq__question__q3 question">
                         <div class="q3-question">
-                            <span class="faq-sentence">Is there a mobile app?</span>
+                            <span class="faq-sentence"
+                                >Is there a mobile app?</span
+                            >
                             <button class="faq-button3 faq-button">
                                 <img
-                                    class="faq-arrow"
+                                    class="faq-arrow3"
                                     src="./assets/images/icon-arrow.svg"
                                     alt=""
                                 />
@@ -262,10 +251,12 @@
                     </div>
                     <div class="faq__question__q4 question">
                         <div class="q4-question">
-                            <span class="faq-sentence"> What about other Chromium browsers?</span>
+                            <span class="faq-sentence">
+                                What about other Chromium browsers?</span
+                            >
                             <button class="faq-button4 faq-button">
                                 <img
-                                    class="faq-arrow"
+                                    class="faq-arrow4"
                                     src="./assets/images/icon-arrow.svg"
                                     alt=""
                                 />
@@ -295,7 +286,7 @@
                             name="email"
                             placeholder="youremail@example.com"
                             class="contactUs__form__email__textArea"
-                            onKeyUp="validation()"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             required
                         />
                         <span class="contactUs__form__email__textError"
