@@ -12,6 +12,9 @@
         }
         &__file {
             width: 100%;
+            @media only screen and (min-width: $desktop) {
+                width: 90%;
+            }
         }
     }
     &__text {
@@ -20,21 +23,30 @@
         align-items: center;
         margin-bottom: 2vh;
         text-align: center;
-        @media only screen and (min-width: 413px) {
+        @media only screen and (min-width: $desktop) {
             align-items: flex-start;
             margin-left: 5vw;
             margin-bottom: 5vh;
+            width: 50%;
+            text-align: left;
         }
         h1 {
             width: 80%;
             font-size: 8vw;
             font-weight: 500;
+            @media only screen and (min-width: $desktop) {
+                font-size: 3vw;
+            }
         }
         p {
             width: 80%;
             margin-bottom: 5vh;
             color: $grayishBlue;
-            
+            font-size: 4vw;
+            @media only screen and (min-width: $desktop) {
+                font-size: 1.5vw;
+                line-height: 2vw;
+            }
         }
         &__button {
             font-weight: 500;

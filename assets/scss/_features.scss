@@ -1,12 +1,13 @@
 .features {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
+    text-align: center;
+
     .features-button-container {
-        @media only screen and (min-width: 413px) {
+        @media only screen and (min-width: $desktop) {
             display: flex;
         }
     }
@@ -14,6 +15,9 @@
     h2 {
         font-size: 7vw;
         font-weight: 500;
+        @media only screen and (min-width: $desktop) {
+            font-size: 3vw;
+        }
     }
 
     .features__text {
@@ -21,8 +25,11 @@
         margin-bottom: 5vh;
         font-size: 4vw;
         color: $grayishBlue;
-        @media only screen and (min-width: 413px) {
+
+        @media only screen and (min-width: $desktop) {
             width: 50%;
+            font-size: 1.5vw;
+            line-height: 2vw;
         }
     }
 
@@ -34,74 +41,108 @@
         font-weight: 600;
         color: $softGrey;
         background-color: white;
+
+        @media only screen and (min-width: $desktop) {
+            font-size: 1.5vw;
+            white-space: nowrap;
+        }
     }
 
     .bookmarking {
         border-top: 0.5px solid $lightGrey;
-        @media only screen and (min-width: 413px) {
+
+        @media only screen and (min-width: $desktop) {
             border-top: none;
             border-bottom: 0.5px solid $lightGrey;
         }
-        &__highlight{
+
+        &__highlight {
             padding-bottom: 12px;
         }
-        &__highlight:hover{
+
+        &__highlight:hover {
             border-bottom: 4px solid $softRed;
         }
     }
+
     .bookmarking:hover {
-        color: $softBlack;
+        @media only screen and (min-width: $desktop) {
+            color: $softBlack;
+        }
     }
+    .bookmarking:focus {
+        color: $softRed;
+    }
+
     .searching {
         border-top: 0.5px solid $lightGrey;
         border-bottom: 0.5px solid $lightGrey;
-        @media only screen and (min-width: 413px) {
+
+        @media only screen and (min-width: $desktop) {
             border-top: none;
         }
-        &__highlight{
+
+        &__highlight {
             padding-bottom: 12px;
         }
-        &__highlight:hover{
+
+        &__highlight:hover {
             border-bottom: 4px solid $softRed;
         }
     }
 
     .searching:hover {
-        color: $softBlack;
+        @media only screen and (min-width: $desktop) {
+            color: $softBlack;
+        }
+    }
+    .searching:focus {
+        color: $softRed;
     }
 
     .sharing {
         border-bottom: 0.5px solid $lightGrey;
-        &__highlight{
+
+        &__highlight {
             padding-bottom: 12px;
         }
-        &__highlight:hover{
+
+        &__highlight:hover {
             border-bottom: 4px solid $softRed;
         }
     }
 
     .sharing:hover {
-        color: $softBlack;
+        color: $softRed;
+
+        @media only screen and (min-width: $desktop) {
+            color: $softBlack;
+        }
     }
+    .sharing:focus {
+        color: $softRed;
+    }
+
     ul {
         margin: 0px;
         padding: 0px;
-        margin-top: 8vh;
         list-style-type: none;
+
         .slide {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
 
-            @media screen and (min-width: 413px) {
+            @media screen and (min-width: $desktop) {
                 flex-direction: row;
                 margin-top: 10vh;
                 justify-content: space-between;
+                align-items: flex-start;
             }
 
             .slide__left {
-                margin-bottom: 5vh;
+
                 img {
                     width: 80%;
                 }
@@ -113,22 +154,28 @@
                 align-items: center;
                 justify-content: center;
 
-                @media only screen and (min-width: 413px) {
+                @media only screen and (min-width: $desktop) {
                     align-items: flex-end;
                     margin-right: 5vw;
+                    width: 50%;
                 }
-                h2{
+
+                h2 {
                     font-size: 7vw;
-                    margin-bottom: 0px;
+                    @media only screen and (min-width: $desktop) {
+                        font-size: 3vw;
+                    }
                 }
+
                 p {
                     color: $grayishBlue;
                     width: 80%;
-                    margin-bottom: 3vh;
                     font-size: 4vw;
                     line-height: 3vh;
-                    @media only screen and (min-width: 413px) {
+                    @media only screen and (min-width: $desktop) {
                         text-align: right;
+                        font-size: 1.5vw;
+                        line-height: 2vw;
                     }
                 }
 

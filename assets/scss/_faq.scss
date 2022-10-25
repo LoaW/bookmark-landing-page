@@ -5,12 +5,15 @@
     justify-content: center;
     margin-top: 10vh;
     font-size: 20px;
-    line-height: 30px;
     &__title {
         font-weight: 500;
         font-size: 7vw;
         width: 80%;
         text-align: center;
+        line-height: 7vw;
+        @media only screen and (min-width: $desktop) {
+            font-size: 3vw;
+        }
     }
     &__description {
         width: 80%;
@@ -18,6 +21,13 @@
         font-size: 4vw;
         text-align: center;
         color: $grayishBlue;
+        line-height: 5vw;
+        @media only screen and (min-width: $desktop) {
+            width: 50%;
+            font-size: 1.5vw;
+            line-height: 2vw;
+        }
+
     }
     &__question {
         width: 85%;
@@ -28,12 +38,18 @@
 
             .faq-sentence {
                 font-size: 4vw;
+                @media only screen and (min-width: $desktop) {
+                    font-size: 1.5vw;
+                }
             }
             p {
-                margin-bottom: 5vh;
                 margin-left: 10px;
                 font-size: 4vw;
                 color: $grayishBlue;
+                @media only screen and (min-width: $desktop) {
+                    font-size: 1.5vw;
+                    line-height: 2vw;
+                }
             }
             .q1-question {
                 display: flex;

@@ -7,6 +7,9 @@
     h2 {
         font-weight: 500;
         font-size: 7vw;
+        @media only screen and (min-width: $desktop) {
+            font-size: 3vw;
+        }
     }
     p {
         color: $grayishBlue;
@@ -14,14 +17,19 @@
         margin-bottom: 10vh;
         text-align: center;
         font-size: 4vw;
-        line-height: 3vh;
+        line-height: 3vw;
+        @media only screen and (min-width: $desktop) {
+            font-size: 1.5vw;
+            line-height: 2vw;
+            width: 60%;
+        }
 
     }
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media only screen and (min-width: 811px) {
+        @media only screen and (min-width: $desktop) {
             flex-direction: row;
             align-self: center;
             gap: 2vw;
@@ -35,7 +43,7 @@
             margin: 3vh 0vh;
             border-radius: 15px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            @media only screen and (min-width: 811px) {
+            @media only screen and (min-width: $desktop) {
                 width: 280px;
             }
             img{
