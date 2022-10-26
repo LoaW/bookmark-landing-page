@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3vh;
@@ -289,6 +289,9 @@
   margin-bottom: 10vh;
   text-align: center;
 }
+.features .features-button-container {
+  margin-bottom: 3vh;
+}
 @media only screen and (min-width: 821px) {
   .features .features-button-container {
     display: flex;
@@ -401,6 +404,7 @@
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  width: 80%;
 }
 .features ul .slide {
   display: flex;
@@ -499,7 +503,7 @@
   margin-bottom: 10vh;
   text-align: center;
   font-size: 4vw;
-  line-height: 3vw;
+  line-height: 4.5vw;
 }
 @media only screen and (min-width: 821px) {
   .download p {
@@ -605,7 +609,7 @@
   }
 }
 .faq__question {
-  width: 85%;
+  width: 50%;
 }
 .faq__question .question {
   border-bottom: 0.5px solid rgb(199, 199, 199);
@@ -619,6 +623,9 @@
   .faq__question .question .faq-sentence {
     font-size: 1.5vw;
   }
+}
+.faq__question .question .faq-sentence:hover {
+  color: hsl(0deg, 94%, 66%);
 }
 .faq__question .question p {
   margin-left: 10px;

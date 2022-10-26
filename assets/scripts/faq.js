@@ -14,7 +14,7 @@ const arrow3 = document.querySelector(".faq-arrow3")
 const arrow4 = document.querySelector(".faq-arrow4")
 
 
-question1.addEventListener ("click", function() {
+question1.onclick = function () {
     if (response1.style.display === "inline-block") {
         response1.style.display = "none";
         arrow1.style.rotate = "0deg"
@@ -28,7 +28,7 @@ question1.addEventListener ("click", function() {
     arrow2.style.rotate = "0deg"
     arrow3.style.rotate = "0deg"
     arrow4.style.rotate = "0deg"
-});
+};
 question2.onclick = function () {
     if (response2.style.display === "inline-block") {
         response2.style.display = "none";

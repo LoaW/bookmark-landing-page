@@ -5,8 +5,9 @@
     justify-content: center;
     margin-bottom: 10vh;
     text-align: center;
-
+    
     .features-button-container {
+        margin-bottom: 3vh;
         @media only screen and (min-width: $desktop) {
             display: flex;
         }
@@ -127,7 +128,7 @@
         margin: 0px;
         padding: 0px;
         list-style-type: none;
-
+        width: 80%;
         .slide {
             display: flex;
             flex-direction: column;
