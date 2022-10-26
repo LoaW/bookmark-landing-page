@@ -14,62 +14,65 @@ const arrow3 = document.querySelector(".faq-arrow3")
 const arrow4 = document.querySelector(".faq-arrow4")
 
 
-question1.onclick = function () {
+question1.onclick = () => {
     if (response1.style.display === "inline-block") {
-        response1.style.display = "none";
-        arrow1.style.rotate = "0deg"
-    }else if(response1.style.display === "none"){
+        response1.style.display = "";
+        arrow1.style.rotate = "0deg";
+        console.log("test if")
+    }else if(response1.style.display === ""){
         response1.style.display = "inline-block";
         arrow1.style.rotate = "-180deg"
+        console.log("test else if")
     }
-    response2.style.display = "none";
-    response3.style.display = "none";
-    response4.style.display = "none";
+    console.log(response1.style.display === "inline-block")
+    response2.style.display = "";
+    response3.style.display = "";
+    response4.style.display = "";
     arrow2.style.rotate = "0deg"
     arrow3.style.rotate = "0deg"
     arrow4.style.rotate = "0deg"
 };
 question2.onclick = function () {
     if (response2.style.display === "inline-block") {
-        response2.style.display = "none";
+        response2.style.display = "";
         arrow2.style.rotate = "0deg"
-    }else if(response2.style.display === "none"){
+    }else if(response2.style.display === ""){
         response2.style.display = "inline-block";
         arrow2.style.rotate = "-180deg"
     }
-    response1.style.display = "none";
-    response3.style.display = "none";
-    response4.style.display = "none";
+    response1.style.display = "";
+    response3.style.display = "";
+    response4.style.display = "";
     arrow1.style.rotate = "0deg"
     arrow3.style.rotate = "0deg"
     arrow4.style.rotate = "0deg"
 };
 question3.onclick = function () {
     if (response3.style.display === "inline-block") {
-        response3.style.display = "none";
+        response3.style.display = "";
         arrow3.style.rotate = "0deg"
-    }else if(response3.style.display === "none"){
+    }else if(response3.style.display === ""){
         response3.style.display = "inline-block";
         arrow3.style.rotate = "-180deg"
     }
-    response2.style.display = "none";
-    response1.style.display = "none";
-    response4.style.display = "none";
+    response2.style.display = "";
+    response1.style.display = "";
+    response4.style.display = "";
     arrow2.style.rotate = "0deg"
     arrow1.style.rotate = "0deg"
     arrow4.style.rotate = "0deg"
 };
 question4.onclick = function () {
     if (response4.style.display === "inline-block") {
-        response4.style.display = "none";
+        response4.style.display = "";
         arrow4.style.rotate = "0deg"
-    }else if(response4.style.display === "none"){
+    }else if(response4.style.display === ""){
         response4.style.display = "inline-block";
         arrow4.style.rotate = "-180deg"
     }
-    response2.style.display = "none";
-    response3.style.display = "none";
-    response1.style.display = "none";
+    response2.style.display = "";
+    response3.style.display = "";
+    response1.style.display = "";
     arrow2.style.rotate = "0deg"
     arrow3.style.rotate = "0deg"
     arrow1.style.rotate = "0deg"

@@ -615,6 +615,7 @@
   border-bottom: 0.5px solid rgb(199, 199, 199);
   margin-top: 3vh;
   padding-bottom: 2vh;
+  cursor: pointer;
 }
 .faq__question .question .faq-sentence {
   font-size: 4vw;
