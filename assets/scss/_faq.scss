@@ -91,6 +91,9 @@
                 border: none;
             }
         }
+        .question:hover{
+            color: $softRed;
+        }
     }
     a {
         color: white;

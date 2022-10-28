@@ -58,6 +58,7 @@
                 text-decoration: none;
                 margin-right: 2vw;
                 border: 2px solid white;
+                
             }
             .chrome:hover {
                 color: $softBlue;
@@ -70,16 +71,14 @@
                 padding: 13px;
                 border-radius: 5px;
                 text-decoration: none;
-                box-shadow: 0 2.8px 2.2px rgba(157, 120, 120, 0.034),
-                    0 6.7px 5.3px rgba(144, 125, 125, 0.048),
-                    0 12.5px 10px rgba(147, 101, 101, 0.06),
-                    0 22.3px 17.9px rgba(170, 123, 123, 0.072);
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                 margin-left: 2vw;
+                border: 2px solid white;
             }
             .firefox:hover {
                 color: $softGrey;
                 background-color: white;
-                border: 2px solid white;
+                border: 2px solid $softGrey;
             }
         }
     }

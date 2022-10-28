@@ -59,21 +59,20 @@
 
         &__highlight {
             padding-bottom: 12px;
+            border-bottom: 4px solid $softRed;
         }
 
-        &__highlight:hover {
+        &__highlight:focus {
             border-bottom: 4px solid $softRed;
         }
     }
 
     .bookmarking:hover {
         @media only screen and (min-width: $desktop) {
-            color: $softBlack;
+            color: $softRed;
         }
     }
-    .bookmarking:focus {
-        color: $softRed;
-    }
+
 
     .searching {
         border-top: 0.5px solid $lightGrey;
@@ -87,19 +86,17 @@
             padding-bottom: 12px;
         }
 
-        &__highlight:hover {
+        &__highlight:focus {
             border-bottom: 4px solid $softRed;
         }
     }
 
     .searching:hover {
         @media only screen and (min-width: $desktop) {
-            color: $softBlack;
+            color: $softRed;
         }
     }
-    .searching:focus {
-        color: $softRed;
-    }
+
 
     .sharing {
         border-bottom: 0.5px solid $lightGrey;
@@ -108,7 +105,7 @@
             padding-bottom: 12px;
         }
 
-        &__highlight:hover {
+        &__highlight:focus {
             border-bottom: 4px solid $softRed;
         }
     }
@@ -117,18 +114,18 @@
         color: $softRed;
 
         @media only screen and (min-width: $desktop) {
-            color: $softBlack;
+            color: $softRed;
         }
     }
-    .sharing:focus {
-        color: $softRed;
-    }
+
 
     ul {
         margin: 0px;
         padding: 0px;
         list-style-type: none;
         width: 80%;
+        display: flex;
+        flex-wrap: wrap;
         .slide {
             display: flex;
             flex-direction: column;

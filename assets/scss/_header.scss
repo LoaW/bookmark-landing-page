@@ -11,6 +11,16 @@
         margin-top: 10vh;
         margin-bottom: 15vh;
     }
+    &__home{
+        width: 45%;
+        @media only screen and (min-width: $desktop) {
+            width: 15%;
+        }
+        img{
+            width: 100%;
+        }
+        
+    }
     &__modal {
         display: block;
         background-color: white;

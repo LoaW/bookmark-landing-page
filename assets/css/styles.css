@@ -15,6 +15,17 @@
     margin-bottom: 15vh;
   }
 }
+.navbar__home {
+  width: 45%;
+}
+@media only screen and (min-width: 821px) {
+  .navbar__home {
+    width: 15%;
+  }
+}
+.navbar__home img {
+  width: 100%;
+}
 .navbar__modal {
   display: block;
   background-color: white;
@@ -272,13 +283,14 @@
   padding: 13px;
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: 0 2.8px 2.2px rgba(157, 120, 120, 0.034), 0 6.7px 5.3px rgba(144, 125, 125, 0.048), 0 12.5px 10px rgba(147, 101, 101, 0.06), 0 22.3px 17.9px rgba(170, 123, 123, 0.072);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-left: 2vw;
+  border: 2px solid white;
 }
 .introduction__text__button .firefox:hover {
   color: rgb(99, 95, 95);
   background-color: white;
-  border: 2px solid white;
+  border: 2px solid rgb(99, 95, 95);
 }
 
 .features {
@@ -345,17 +357,15 @@
 }
 .features .bookmarking__highlight {
   padding-bottom: 12px;
+  border-bottom: 4px solid hsl(0deg, 94%, 66%);
 }
-.features .bookmarking__highlight:hover {
+.features .bookmarking__highlight:focus {
   border-bottom: 4px solid hsl(0deg, 94%, 66%);
 }
 @media only screen and (min-width: 821px) {
   .features .bookmarking:hover {
-    color: rgb(43, 43, 65);
+    color: hsl(0deg, 94%, 66%);
   }
-}
-.features .bookmarking:focus {
-  color: hsl(0deg, 94%, 66%);
 }
 .features .searching {
   border-top: 0.5px solid rgb(199, 199, 199);
@@ -369,16 +379,13 @@
 .features .searching__highlight {
   padding-bottom: 12px;
 }
-.features .searching__highlight:hover {
+.features .searching__highlight:focus {
   border-bottom: 4px solid hsl(0deg, 94%, 66%);
 }
 @media only screen and (min-width: 821px) {
   .features .searching:hover {
-    color: rgb(43, 43, 65);
+    color: hsl(0deg, 94%, 66%);
   }
-}
-.features .searching:focus {
-  color: hsl(0deg, 94%, 66%);
 }
 .features .sharing {
   border-bottom: 0.5px solid rgb(199, 199, 199);
@@ -386,7 +393,7 @@
 .features .sharing__highlight {
   padding-bottom: 12px;
 }
-.features .sharing__highlight:hover {
+.features .sharing__highlight:focus {
   border-bottom: 4px solid hsl(0deg, 94%, 66%);
 }
 .features .sharing:hover {
@@ -394,17 +401,16 @@
 }
 @media only screen and (min-width: 821px) {
   .features .sharing:hover {
-    color: rgb(43, 43, 65);
+    color: hsl(0deg, 94%, 66%);
   }
-}
-.features .sharing:focus {
-  color: hsl(0deg, 94%, 66%);
 }
 .features ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .features ul .slide {
   display: flex;
@@ -674,6 +680,9 @@
 .faq__question .question .faq-button {
   background-color: white;
   border: none;
+}
+.faq__question .question:hover {
+  color: hsl(0deg, 94%, 66%);
 }
 .faq a {
   color: white;
