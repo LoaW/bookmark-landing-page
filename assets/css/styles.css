@@ -61,7 +61,7 @@
 }
 @media only screen and (min-width: 821px) {
   .navbar__links a:hover {
-    color: hsl(0deg, 94%, 66%);
+    color: #fa5757;
   }
 }
 @media only screen and (min-width: 821px) {
@@ -69,15 +69,15 @@
     padding: 10px 30px;
     border-radius: 7px;
     color: white;
-    background-color: hsl(0deg, 94%, 66%);
+    background-color: #fa5757;
     border: 2px solid white;
   }
 }
 @media only screen and (min-width: 821px) {
   .navbar__links .navbar__links__login:hover {
-    color: hsl(0deg, 94%, 66%);
+    color: #fa5757;
     background-color: white;
-    border: 2px solid hsl(0deg, 94%, 66%);
+    border: 2px solid #fa5757;
   }
 }
 
@@ -168,7 +168,7 @@
   transition: 0.3s;
 }
 .footer__nav a:hover {
-  color: hsl(0deg, 94%, 66%);
+  color: #fa5757;
 }
 .footer__social {
   margin-top: 3vh;
@@ -269,7 +269,7 @@
 }
 .introduction__text__button .chrome {
   color: white;
-  background-color: hsl(231deg, 69%, 60%);
+  background-color: #5368df;
   padding: 13px;
   border-radius: 5px;
   text-decoration: none;
@@ -278,9 +278,9 @@
   transition: 0.3s;
 }
 .introduction__text__button .chrome:hover {
-  color: hsl(231deg, 69%, 60%);
+  color: #5368df;
   background-color: white;
-  border: 2px solid hsl(231deg, 69%, 60%);
+  border: 2px solid #5368df;
 }
 .introduction__text__button .firefox {
   color: rgb(99, 95, 95);
@@ -365,7 +365,7 @@
 .features .features-button-container .bookmarking {
   border-top: 0.5px solid rgb(199, 199, 199);
   transition: 0.3s;
-  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+  border-bottom: 4px solid #fa5757;
 }
 @media only screen and (min-width: 821px) {
   .features .features-button-container .bookmarking {
@@ -374,12 +374,12 @@
 }
 @media only screen and (min-width: 821px) {
   .features .features-button-container .bookmarking:hover {
-    color: hsl(0deg, 94%, 66%);
+    color: #fa5757;
   }
 }
 @media only screen and (min-width: 821px) {
   .features .features-button-container .bookmarking:focus {
-    border-bottom: 4px solid hsl(0deg, 94%, 66%);
+    border-bottom: 4px solid #fa5757;
   }
 }
 .features .features-button-container .searching {
@@ -395,11 +395,11 @@
   padding-bottom: 12px;
 }
 .features .features-button-container .searching__highlight:focus {
-  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+  border-bottom: 4px solid #fa5757;
 }
 @media only screen and (min-width: 821px) {
   .features .features-button-container .searching:hover {
-    color: hsl(0deg, 94%, 66%);
+    color: #fa5757;
   }
 }
 .features .features-button-container .sharing {
@@ -410,14 +410,14 @@
   padding-bottom: 12px;
 }
 .features .features-button-container .sharing__highlight:focus {
-  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+  border-bottom: 4px solid #fa5757;
 }
 .features .features-button-container .sharing:hover {
-  color: hsl(0deg, 94%, 66%);
+  color: #fa5757;
 }
 @media only screen and (min-width: 821px) {
   .features .features-button-container .sharing:hover {
-    color: hsl(0deg, 94%, 66%);
+    color: #fa5757;
   }
 }
 .features ul {
@@ -481,7 +481,7 @@
 }
 .features ul .slide .slide__right a {
   color: white;
-  background-color: hsl(231deg, 69%, 60%);
+  background-color: #5368df;
   padding: 13px;
   border-radius: 5px;
   text-decoration: none;
@@ -490,9 +490,9 @@
   transition: 0.3s;
 }
 .features ul .slide .slide__right a:hover {
-  color: hsl(231deg, 69%, 60%);
+  color: #5368df;
   background-color: white;
-  border: 2px solid hsl(231deg, 69%, 60%);
+  border: 2px solid #5368df;
 }
 .features ul .s1 {
   display: flex;
@@ -584,7 +584,7 @@
 }
 .download__container__card a {
   color: white;
-  background-color: hsl(231deg, 69%, 60%);
+  background-color: #5368df;
   padding: 13px;
   border-radius: 5px;
   text-decoration: none;
@@ -592,9 +592,9 @@
   border: 2px solid white;
 }
 .download__container__card a:hover {
-  color: hsl(231deg, 69%, 60%);
+  color: #5368df;
   background-color: white;
-  border: 2px solid hsl(231deg, 69%, 60%);
+  border: 2px solid #5368df;
   transition: 0.3s;
 }
 .download__container .chrome {
@@ -662,7 +662,7 @@
   }
 }
 .faq__question .question .faq-sentence:hover {
-  color: hsl(0deg, 94%, 66%);
+  color: #fa5757;
   transition: 0.3s;
 }
 .faq__question .question p {
@@ -713,12 +713,12 @@
   border: none;
 }
 .faq__question .question:hover {
-  color: hsl(0deg, 94%, 66%);
+  color: #fa5757;
   transition: 0.3s;
 }
 .faq a {
   color: white;
-  background-color: hsl(231deg, 69%, 60%);
+  background-color: #5368df;
   padding: 13px;
   border-radius: 5px;
   text-decoration: none;
@@ -727,9 +727,9 @@
   border: 2px solid white;
 }
 .faq a:hover {
-  color: hsl(231deg, 69%, 60%);
+  color: #5368df;
   background-color: white;
-  border: 2px solid hsl(231deg, 69%, 60%);
+  border: 2px solid #5368df;
   transition: 0.3s;
 }
 
@@ -738,7 +738,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: hsl(231deg, 69%, 60%);
+  background-color: #5368df;
   color: white;
 }
 .contactUs__stat {
@@ -767,7 +767,7 @@
   justify-content: center;
   width: 370px;
   margin-bottom: 2vh;
-  background-color: hsl(0deg, 94%, 66%);
+  background-color: #fa5757;
   border-radius: 5px;
 }
 .contactUs__form__email__textArea {
@@ -796,16 +796,16 @@
   padding: 20px;
   font-size: 16px;
   color: white;
-  background-color: hsl(0deg, 94%, 66%);
+  background-color: #fa5757;
   font-weight: 500;
   margin-bottom: 5vh;
-  border: 2px solid hsl(231deg, 69%, 60%);
+  border: 2px solid #5368df;
   transition: 0.3s;
 }
 .contactUs__form__send:hover {
-  color: hsl(0deg, 94%, 66%);
+  color: #fa5757;
   background-color: white;
-  border: 2px solid hsl(0deg, 94%, 66%);
+  border: 2px solid #fa5757;
 }
 
 body {
