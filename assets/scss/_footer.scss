@@ -29,6 +29,7 @@
             text-transform: uppercase;
             letter-spacing: 0.3em;
             margin: 1vh;
+            transition: .3s;
         }
         a:hover {
             color: $softRed;
@@ -42,12 +43,14 @@
         }
         &__facebook{
             margin-right: 1em;
+            transition: .3s;
         }
         &__facebook:hover{
             border-bottom: solid 2px white;
         }
         &__twitter{
             margin-left: 1em;
+            transition: .3s;
         }
         &__twitter:hover{
             border-bottom: solid 2px white;

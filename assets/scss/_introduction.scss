@@ -58,7 +58,7 @@
                 text-decoration: none;
                 margin-right: 2vw;
                 border: 2px solid white;
-                
+                transition: .3s;
             }
             .chrome:hover {
                 color: $softBlue;
@@ -79,6 +79,7 @@
                 color: $softGrey;
                 background-color: white;
                 border: 2px solid $softGrey;
+                transition: .3s;
             }
         }
     }

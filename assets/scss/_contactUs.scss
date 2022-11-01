@@ -55,7 +55,6 @@
         }
         &__send {
             width: 370px;
-            border: none;
             border-radius: 5px;
             padding: 20px;
             font-size: 16px;
@@ -64,6 +63,7 @@
             font-weight: 500;
             margin-bottom: 5vh;
             border: 2px solid $softBlue;
+            transition: .3s;
         }
         &__send:hover {
             color: $softRed;

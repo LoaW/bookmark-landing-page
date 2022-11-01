@@ -51,6 +51,7 @@
     color: rgb(43, 43, 65);
     font-size: 14px;
     font-weight: 500;
+    transition: 0.3s;
   }
 }
 @media only screen and (min-width: 821px) and (min-width: 821px) {
@@ -164,6 +165,7 @@
   text-transform: uppercase;
   letter-spacing: 0.3em;
   margin: 1vh;
+  transition: 0.3s;
 }
 .footer__nav a:hover {
   color: hsl(0deg, 94%, 66%);
@@ -178,12 +180,14 @@
 }
 .footer__social__facebook {
   margin-right: 1em;
+  transition: 0.3s;
 }
 .footer__social__facebook:hover {
   border-bottom: solid 2px white;
 }
 .footer__social__twitter {
   margin-left: 1em;
+  transition: 0.3s;
 }
 .footer__social__twitter:hover {
   border-bottom: solid 2px white;
@@ -271,6 +275,7 @@
   text-decoration: none;
   margin-right: 2vw;
   border: 2px solid white;
+  transition: 0.3s;
 }
 .introduction__text__button .chrome:hover {
   color: hsl(231deg, 69%, 60%);
@@ -291,6 +296,7 @@
   color: rgb(99, 95, 95);
   background-color: white;
   border: 2px solid rgb(99, 95, 95);
+  transition: 0.3s;
 }
 
 .features {
@@ -331,8 +337,17 @@
     line-height: 2vw;
   }
 }
-.features .features-button {
+.features .features-button-container {
   width: 80%;
+  margin-bottom: 8vh;
+}
+@media only screen and (min-width: 821px) {
+  .features .features-button-container {
+    width: 50%;
+  }
+}
+.features .features-button-container .features-button {
+  width: 100%;
   padding: 15px;
   border: none;
   font-size: 4vw;
@@ -341,66 +356,67 @@
   background-color: white;
 }
 @media only screen and (min-width: 821px) {
-  .features .features-button {
+  .features .features-button-container .features-button {
     font-size: 1.5vw;
     white-space: nowrap;
+    padding: 15px 0px;
   }
 }
-.features .bookmarking {
+.features .features-button-container .bookmarking {
   border-top: 0.5px solid rgb(199, 199, 199);
-}
-@media only screen and (min-width: 821px) {
-  .features .bookmarking {
-    border-top: none;
-    border-bottom: 0.5px solid rgb(199, 199, 199);
-  }
-}
-.features .bookmarking__highlight {
-  padding-bottom: 12px;
-  border-bottom: 4px solid hsl(0deg, 94%, 66%);
-}
-.features .bookmarking__highlight:focus {
+  transition: 0.3s;
   border-bottom: 4px solid hsl(0deg, 94%, 66%);
 }
 @media only screen and (min-width: 821px) {
-  .features .bookmarking:hover {
-    color: hsl(0deg, 94%, 66%);
-  }
-}
-.features .searching {
-  border-top: 0.5px solid rgb(199, 199, 199);
-  border-bottom: 0.5px solid rgb(199, 199, 199);
-}
-@media only screen and (min-width: 821px) {
-  .features .searching {
+  .features .features-button-container .bookmarking {
     border-top: none;
   }
 }
-.features .searching__highlight {
-  padding-bottom: 12px;
-}
-.features .searching__highlight:focus {
-  border-bottom: 4px solid hsl(0deg, 94%, 66%);
-}
 @media only screen and (min-width: 821px) {
-  .features .searching:hover {
+  .features .features-button-container .bookmarking:hover {
     color: hsl(0deg, 94%, 66%);
   }
 }
-.features .sharing {
-  border-bottom: 0.5px solid rgb(199, 199, 199);
+@media only screen and (min-width: 821px) {
+  .features .features-button-container .bookmarking:focus {
+    border-bottom: 4px solid hsl(0deg, 94%, 66%);
+  }
 }
-.features .sharing__highlight {
+.features .features-button-container .searching {
+  border-bottom: 0.5px solid rgb(199, 199, 199);
+  transition: 0.3s;
+}
+@media only screen and (min-width: 821px) {
+  .features .features-button-container .searching {
+    border-top: none;
+  }
+}
+.features .features-button-container .searching__highlight {
   padding-bottom: 12px;
 }
-.features .sharing__highlight:focus {
+.features .features-button-container .searching__highlight:focus {
   border-bottom: 4px solid hsl(0deg, 94%, 66%);
 }
-.features .sharing:hover {
+@media only screen and (min-width: 821px) {
+  .features .features-button-container .searching:hover {
+    color: hsl(0deg, 94%, 66%);
+  }
+}
+.features .features-button-container .sharing {
+  border-bottom: 0.5px solid rgb(199, 199, 199);
+  transition: 0.3s;
+}
+.features .features-button-container .sharing__highlight {
+  padding-bottom: 12px;
+}
+.features .features-button-container .sharing__highlight:focus {
+  border-bottom: 4px solid hsl(0deg, 94%, 66%);
+}
+.features .features-button-container .sharing:hover {
   color: hsl(0deg, 94%, 66%);
 }
 @media only screen and (min-width: 821px) {
-  .features .sharing:hover {
+  .features .features-button-container .sharing:hover {
     color: hsl(0deg, 94%, 66%);
   }
 }
@@ -471,6 +487,7 @@
   text-decoration: none;
   margin-right: 2vw;
   border: 2px solid white;
+  transition: 0.3s;
 }
 .features ul .slide .slide__right a:hover {
   color: hsl(231deg, 69%, 60%);
@@ -545,7 +562,14 @@
     width: 280px;
   }
 }
-.download__container__card img {
+.download__container__card .logo {
+  padding: 30px;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.download__container__card .logo:hover {
+  rotate: 360deg;
+}
+.download__container__card .trait {
   padding: 30px;
 }
 .download__container__card .card__add {
@@ -571,6 +595,7 @@
   color: hsl(231deg, 69%, 60%);
   background-color: white;
   border: 2px solid hsl(231deg, 69%, 60%);
+  transition: 0.3s;
 }
 .download__container .chrome {
   translate: 0px -50px;
@@ -615,7 +640,12 @@
   }
 }
 .faq__question {
-  width: 50%;
+  width: 80%;
+}
+@media only screen and (min-width: 821px) {
+  .faq__question {
+    width: 50%;
+  }
 }
 .faq__question .question {
   border-bottom: 0.5px solid rgb(199, 199, 199);
@@ -633,6 +663,7 @@
 }
 .faq__question .question .faq-sentence:hover {
   color: hsl(0deg, 94%, 66%);
+  transition: 0.3s;
 }
 .faq__question .question p {
   margin-left: 10px;
@@ -683,6 +714,7 @@
 }
 .faq__question .question:hover {
   color: hsl(0deg, 94%, 66%);
+  transition: 0.3s;
 }
 .faq a {
   color: white;
@@ -698,6 +730,7 @@
   color: hsl(231deg, 69%, 60%);
   background-color: white;
   border: 2px solid hsl(231deg, 69%, 60%);
+  transition: 0.3s;
 }
 
 .contactUs {
@@ -759,7 +792,6 @@
 }
 .contactUs__form__send {
   width: 370px;
-  border: none;
   border-radius: 5px;
   padding: 20px;
   font-size: 16px;
@@ -768,6 +800,7 @@
   font-weight: 500;
   margin-bottom: 5vh;
   border: 2px solid hsl(231deg, 69%, 60%);
+  transition: 0.3s;
 }
 .contactUs__form__send:hover {
   color: hsl(0deg, 94%, 66%);

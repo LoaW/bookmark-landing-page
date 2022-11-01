@@ -30,7 +30,10 @@
 
     }
     &__question {
-        width: 50%;
+        width: 80%;
+        @media only screen and (min-width: $desktop) {
+            width: 50%;
+        }
         .question {
             border-bottom: 0.5px solid $lightGrey;
             margin-top: 3vh;
@@ -44,6 +47,7 @@
             }
             .faq-sentence:hover{
                 color: $softRed;
+                transition: .3s;
             }
             p {
                 margin-left: 10px;
@@ -93,6 +97,7 @@
         }
         .question:hover{
             color: $softRed;
+            transition: .3s;
         }
     }
     a {
@@ -109,6 +114,7 @@
         color: $softBlue;
         background-color: white;
         border: 2px solid $softBlue;
+        transition: .3s;
     }
 }
 

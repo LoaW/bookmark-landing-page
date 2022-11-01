@@ -33,90 +33,97 @@
             line-height: 2vw;
         }
     }
-
-    .features-button {
+    .features-button-container{
         width: 80%;
-        padding: 15px;
-        border: none;
-        font-size: 4vw;
-        font-weight: 600;
-        color: $softGrey;
-        background-color: white;
-
+        margin-bottom: 8vh;
         @media only screen and (min-width: $desktop) {
-            font-size: 1.5vw;
-            white-space: nowrap;
+            width: 50%;
+            
         }
-    }
+        .features-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            font-size: 4vw;
+            font-weight: 600;
+            color: $softGrey;
+            background-color: white;
+    
+            @media only screen and (min-width: $desktop) {
+                font-size: 1.5vw;
+                white-space: nowrap;
+                padding: 15px 0px;
+                
+            }
+        }
+    
+        .bookmarking {
+            border-top: 0.5px solid $lightGrey;
+            transition: .3s;
+            border-bottom: 4px solid $softRed;
 
-    .bookmarking {
-        border-top: 0.5px solid $lightGrey;
+            @media only screen and (min-width: $desktop) {
+                border-top: none;
+            }
+        }
+    
+        .bookmarking:hover {
+            @media only screen and (min-width: $desktop) {
+                color: $softRed;
+            }
+        }
 
-        @media only screen and (min-width: $desktop) {
-            border-top: none;
+        .bookmarking:focus {
+            @media only screen and (min-width: $desktop) {
+                border-bottom: 4px solid $softRed;
+            }
+        }
+    
+    
+        .searching {
             border-bottom: 0.5px solid $lightGrey;
+            transition: .3s;
+            @media only screen and (min-width: $desktop) {
+                border-top: none;
+            }
+    
+            &__highlight {
+                padding-bottom: 12px;
+            }
+    
+            &__highlight:focus {
+                border-bottom: 4px solid $softRed;
+            }
         }
-
-        &__highlight {
-            padding-bottom: 12px;
-            border-bottom: 4px solid $softRed;
+    
+        .searching:hover {
+            @media only screen and (min-width: $desktop) {
+                color: $softRed;
+            }
         }
-
-        &__highlight:focus {
-            border-bottom: 4px solid $softRed;
+    
+    
+        .sharing {
+            border-bottom: 0.5px solid $lightGrey;
+            transition: .3s;
+            &__highlight {
+                padding-bottom: 12px;
+            }
+    
+            &__highlight:focus {
+                border-bottom: 4px solid $softRed;
+            }
         }
-    }
-
-    .bookmarking:hover {
-        @media only screen and (min-width: $desktop) {
+    
+        .sharing:hover {
             color: $softRed;
+    
+            @media only screen and (min-width: $desktop) {
+                color: $softRed;
+            }
         }
     }
-
-
-    .searching {
-        border-top: 0.5px solid $lightGrey;
-        border-bottom: 0.5px solid $lightGrey;
-
-        @media only screen and (min-width: $desktop) {
-            border-top: none;
-        }
-
-        &__highlight {
-            padding-bottom: 12px;
-        }
-
-        &__highlight:focus {
-            border-bottom: 4px solid $softRed;
-        }
-    }
-
-    .searching:hover {
-        @media only screen and (min-width: $desktop) {
-            color: $softRed;
-        }
-    }
-
-
-    .sharing {
-        border-bottom: 0.5px solid $lightGrey;
-
-        &__highlight {
-            padding-bottom: 12px;
-        }
-
-        &__highlight:focus {
-            border-bottom: 4px solid $softRed;
-        }
-    }
-
-    .sharing:hover {
-        color: $softRed;
-
-        @media only screen and (min-width: $desktop) {
-            color: $softRed;
-        }
-    }
+    
 
 
     ul {
@@ -185,6 +192,7 @@
                     text-decoration: none;
                     margin-right: 2vw;
                     border: 2px solid white;
+                    transition: .3s;
                 }
 
                 a:hover {

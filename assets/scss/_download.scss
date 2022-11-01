@@ -46,7 +46,14 @@
             @media only screen and (min-width: $desktop) {
                 width: 280px;
             }
-            img{
+            .logo{
+                padding: 30px;
+                transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            }
+            .logo:hover {
+                rotate: 360deg;
+            }
+            .trait{
                 padding: 30px;
             }
             .card__add{
@@ -69,10 +76,12 @@
                 border: 2px solid white;
 
             }
-            a:hover{
+            a:hover {
                 color: $softBlue;
                 background-color: white;
                 border: 2px solid $softBlue;
+                transition: .3s;
+                
             }
         }
         .chrome{
