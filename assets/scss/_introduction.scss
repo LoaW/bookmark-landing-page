@@ -6,9 +6,12 @@
         flex-direction: row-reverse;
     }
     &__illustration {
+        background-image: url(/assets/images/blueshape.svg);
+        background-size: cover;
         @media only screen and (min-width: $desktop) {
             display: flex;
             align-items: flex-end;
+            width: 40%;
         }
         &__file {
             width: 100%;
@@ -59,6 +62,10 @@
                 margin-right: 2vw;
                 border: 2px solid white;
                 transition: .3s;
+                @media only screen and (min-width: $desktop) {
+                    padding: 1.3vh 2vw;
+                    font-size: 1.3vw;
+                }
             }
             .chrome:hover {
                 color: $softBlue;
@@ -74,6 +81,10 @@
                 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                 margin-left: 2vw;
                 border: 2px solid white;
+                @media only screen and (min-width: $desktop) {
+                    padding: 1.3vh 2vw;
+                    font-size: 1.3vw;
+                }
             }
             .firefox:hover {
                 color: $softGrey;

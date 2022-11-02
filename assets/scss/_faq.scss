@@ -109,6 +109,10 @@
         margin-top: 5vh;
         margin-bottom: 10vh;
         border: 2px solid white;
+        @media only screen and (min-width: $desktop) {
+            padding: 1.3vh 2vw;
+            font-size: 1.3vw;
+        }
     }
     a:hover {
         color: $softBlue;

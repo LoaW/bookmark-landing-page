@@ -167,6 +167,11 @@
   margin: 1vh;
   transition: 0.3s;
 }
+@media only screen and (min-width: 821px) {
+  .footer__nav a {
+    font-size: 1vw;
+  }
+}
 .footer__nav a:hover {
   color: #fa5757;
 }
@@ -212,10 +217,15 @@
     flex-direction: row-reverse;
   }
 }
+.introduction__illustration {
+  background-image: url(/assets/images/blueshape.svg);
+  background-size: cover;
+}
 @media only screen and (min-width: 821px) {
   .introduction__illustration {
     display: flex;
     align-items: flex-end;
+    width: 40%;
   }
 }
 .introduction__illustration__file {
@@ -277,6 +287,12 @@
   border: 2px solid white;
   transition: 0.3s;
 }
+@media only screen and (min-width: 821px) {
+  .introduction__text__button .chrome {
+    padding: 1.3vh 2vw;
+    font-size: 1.3vw;
+  }
+}
 .introduction__text__button .chrome:hover {
   color: #5368df;
   background-color: white;
@@ -291,6 +307,12 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-left: 2vw;
   border: 2px solid white;
+}
+@media only screen and (min-width: 821px) {
+  .introduction__text__button .firefox {
+    padding: 1.3vh 2vw;
+    font-size: 1.3vw;
+  }
 }
 .introduction__text__button .firefox:hover {
   color: rgb(99, 95, 95);
@@ -424,9 +446,6 @@
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .features ul .slide {
   display: flex;
@@ -438,8 +457,19 @@
   .features ul .slide {
     flex-direction: row;
     margin-top: 10vh;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.features ul .slide .slide__left {
+  background-image: url(/assets/images/blueshape_left.svg);
+  background-size: cover;
+  width: 100%;
+}
+@media screen and (min-width: 821px) {
+  .features ul .slide .slide__left {
+    width: 40%;
+    height: auto;
   }
 }
 .features ul .slide .slide__left img {
@@ -488,6 +518,12 @@
   margin-right: 2vw;
   border: 2px solid white;
   transition: 0.3s;
+}
+@media only screen and (min-width: 821px) {
+  .features ul .slide .slide__right a {
+    padding: 1.3vh 2vw;
+    font-size: 1.3vw;
+  }
 }
 .features ul .slide .slide__right a:hover {
   color: #5368df;
@@ -725,6 +761,12 @@
   margin-top: 5vh;
   margin-bottom: 10vh;
   border: 2px solid white;
+}
+@media only screen and (min-width: 821px) {
+  .faq a {
+    padding: 1.3vh 2vw;
+    font-size: 1.3vw;
+  }
 }
 .faq a:hover {
   color: #5368df;

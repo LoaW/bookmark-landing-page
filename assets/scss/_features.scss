@@ -130,9 +130,6 @@
         margin: 0px;
         padding: 0px;
         list-style-type: none;
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
         .slide {
             display: flex;
             flex-direction: column;
@@ -142,12 +139,19 @@
             @media screen and (min-width: $desktop) {
                 flex-direction: row;
                 margin-top: 10vh;
-                justify-content: space-between;
                 align-items: flex-start;
+                justify-content: flex-start;
+
             }
 
             .slide__left {
-
+                background-image: url(/assets/images/blueshape_left.svg);
+                background-size: cover;
+                width: 100%;
+                @media screen and (min-width: $desktop) {
+                    width: 40%;
+                    height: auto;
+                }
                 img {
                     width: 80%;
                 }
@@ -193,6 +197,10 @@
                     margin-right: 2vw;
                     border: 2px solid white;
                     transition: .3s;
+                    @media only screen and (min-width: $desktop) {
+                        padding: 1.3vh 2vw;
+                        font-size: 1.3vw;
+                    }
                 }
 
                 a:hover {

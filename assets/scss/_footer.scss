@@ -30,6 +30,9 @@
             letter-spacing: 0.3em;
             margin: 1vh;
             transition: .3s;
+            @media only screen and (min-width: $desktop) {
+                font-size: 1vw;
+            }
         }
         a:hover {
             color: $softRed;
