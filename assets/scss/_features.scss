@@ -145,7 +145,7 @@
             }
 
             .slide__left {
-                background-image: url(/assets/images/blueshape_left.svg);
+                background-image: url("../images/blueshape_left.svg");
                 background-size: cover;
                 width: 100%;
                 @media screen and (min-width: $desktop) {

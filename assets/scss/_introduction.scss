@@ -6,7 +6,7 @@
         flex-direction: row-reverse;
     }
     &__illustration {
-        background-image: url(/assets/images/blueshape.svg);
+        background-image: url("../images/blueshape.svg");
         background-size: cover;
         @media only screen and (min-width: $desktop) {
             display: flex;
