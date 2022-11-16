@@ -218,7 +218,7 @@
   }
 }
 .introduction__illustration {
-  background-image: url(/assets/images/blueshape.svg);
+  background-image: url("../images/blueshape.svg");
   background-size: cover;
 }
 @media only screen and (min-width: 821px) {
@@ -462,7 +462,7 @@
   }
 }
 .features ul .slide .slide__left {
-  background-image: url(/assets/images/blueshape_left.svg);
+  background-image: url("../images/blueshape_left.svg");
   background-size: cover;
   width: 100%;
 }
