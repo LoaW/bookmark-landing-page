@@ -4,7 +4,7 @@
 
 ## What is this page about?
 
-Sunnyside Agency is a project proposed by Frontend Mentor. 
+Bookmark landing page is a project proposed by Frontend Mentor. 
 It is about integrating as well as possible a design proposed as a challenge.
 The starting sources are images (jpg) and that's it.
 
